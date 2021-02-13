@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"> 
+  <title>My Tetris</title>
+  <meta name="keywords" content="JavaScript, Canvas, Tetris">
+  <meta name="author" content="Valerie Kunichik">
+  
+</head>
+
+<body> 
+  <div class="flex-grid">
+
+    <div class="col">
+      <canvas id="board" class="game-board"></canvas>
+    </div>
+
+    <div class="col">
+      <h1>TETRIS</h1>
+      <canvas id="next" class="next"></canvas>
+      <div class="info">
+        <p>Score: <span id="score">0</span></p>
+        <p>Lines: <span id="lines">0</span></p>
+        <p>Level: <span id="level">0</span></p>
+      </div>  
+      <button onclick="play_game()" class="play-button">PLAY</button>
+            
+    </div>
+
+    <div class="col">
+      <div>
+        <br><br>
+        CONTROLS:<br><br>
+        <div><img type="image/png" src="./img/up.png" width="30" height="30"/> ROTATE<br></div>
+        <div><img type="image/png" src="./img/left.png" width="30" height="30"/> LEFT<br></div>
+        <div><img type="image/png" src="./img/right.png" width="30" height="30"/> RIGHT<br></div>
+        <div><img type="image/png" src="./img/down.png" width="30" height="30"/> DOWN<br></div>
+        <div><img type="image/png" src="./img/p.png" width="30" height="30"/> PAUSE<br></div>
+        <div><img type="image/png" src="./img/space1.png" width="60" height="30"/> HARD DROP<br></div>
+        <div><img type="image/png" src="./img/esc.png" width="30" height="30"/> END GAME<br></div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript" src="app_constants.js"></script>
+  <script type="text/javascript" src="board.js"></script>
+  <script type="text/javascript" src="piece.js"></script>
+  <script type="text/javascript" src="my_tetris.js"></script>   
+</body>
+</html>
