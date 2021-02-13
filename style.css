@@ -1,0 +1,33 @@
+* {
+  font-family: "Lucida Console", monospase;
+  font-weight: bold;
+}
+
+.flex-grid {
+  display: flex;
+}
+.col {
+  flex: 1;
+  padding: 30px;
+}
+
+h1 {
+   font-size: 50px;
+}
+
+.game-board {
+  border: solid 4px;
+  border-color: #BABDB7;
+}
+
+.play-button {
+  background-color: #DCDCDC;
+  font-size: 16px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+.info {
+  background-color: #BABDB7;
+  padding: 10px; 
+}
